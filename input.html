@@ -16,6 +16,7 @@
     "mudei()" onfocus="entreiNoCampo()" onselect=
     "selecionei()" onkeydown="teclaBaixo()" onkeyup=
     "teclaCima()"><br>
+    <ion-icon name="eye-outline" type="button" style="cursor: pointer;" onclick="mostrarSenha()"></ion-icon>
     <button type="submit">Enviar</button>
     <button type="reset">Limpar</button>
     <br>
@@ -25,5 +26,17 @@
 <h2>Log de ocorrências</h2>
 <div id="log">
 </div>
+<script>
+    function mostrarSenha() {
+        var nome = document.getElementById("nome");
+        if (nome.type === "password") {
+        nome.type = "text";
+        } else {
+        nome.type = "password";
+        }
+    }
+</script>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
