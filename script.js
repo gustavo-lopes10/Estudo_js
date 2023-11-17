@@ -43,7 +43,7 @@ function submeti(){
   }
   //Eventos de mouse
   function sobre(){
-    document.getElementById("cores").style.backgroundColor="red";
+    document.getElementById("cores").style.bac=kgroundColor"red";
     document.getElementById("log").innerHTML += "sobre a div / cor: vermelha<br>";
   }
   function paraBaixo(){
